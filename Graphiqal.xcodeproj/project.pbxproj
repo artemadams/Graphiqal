@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2216237D263C9FF70070CBC6 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2216237C263C9FF70070CBC6 /* APIService.swift */; };
+		22162382263CA1210070CBC6 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 22162381263CA1210070CBC6 /* schema.json */; };
+		22162387263CA1720070CBC6 /* example.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 22162386263CA1720070CBC6 /* example.graphql */; };
+		22162396263CA37F0070CBC6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22162395263CA37F0070CBC6 /* API.swift */; };
+		22918BC1263C985A00097D2B /* GraphiqalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22918BC0263C985A00097D2B /* GraphiqalApp.swift */; };
+		22918BC3263C985A00097D2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22918BC2263C985A00097D2B /* ContentView.swift */; };
+		22918BC5263C985D00097D2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22918BC4263C985D00097D2B /* Assets.xcassets */; };
+		22918BC8263C985D00097D2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22918BC7263C985D00097D2B /* Preview Assets.xcassets */; };
+		22918BCA263C985D00097D2B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22918BC9263C985D00097D2B /* Persistence.swift */; };
+		22918BCD263C985D00097D2B /* Graphiqal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22918BCB263C985D00097D2B /* Graphiqal.xcdatamodeld */; };
+		22918BD8263C985D00097D2B /* GraphiqalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22918BD7263C985D00097D2B /* GraphiqalTests.swift */; };
+		22918BE3263C985D00097D2B /* GraphiqalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22918BE2263C985D00097D2B /* GraphiqalUITests.swift */; };
+		22918BF5263C995B00097D2B /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 22918BF4263C995B00097D2B /* Apollo */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22918BD4263C985D00097D2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22918BB5263C985A00097D2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22918BBC263C985A00097D2B;
+			remoteInfo = Graphiqal;
+		};
+		22918BDF263C985D00097D2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22918BB5263C985A00097D2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22918BBC263C985A00097D2B;
+			remoteInfo = Graphiqal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2216237C263C9FF70070CBC6 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		22162381263CA1210070CBC6 /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		22162386263CA1720070CBC6 /* example.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = example.graphql; sourceTree = "<group>"; };
+		22162395263CA37F0070CBC6 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		22918BBD263C985A00097D2B /* Graphiqal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graphiqal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22918BC0263C985A00097D2B /* GraphiqalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphiqalApp.swift; sourceTree = "<group>"; };
+		22918BC2263C985A00097D2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		22918BC4263C985D00097D2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22918BC7263C985D00097D2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		22918BC9263C985D00097D2B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		22918BCC263C985D00097D2B /* Graphiqal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Graphiqal.xcdatamodel; sourceTree = "<group>"; };
+		22918BCE263C985D00097D2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22918BD3263C985D00097D2B /* GraphiqalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphiqalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22918BD7263C985D00097D2B /* GraphiqalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphiqalTests.swift; sourceTree = "<group>"; };
+		22918BD9263C985D00097D2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22918BDE263C985D00097D2B /* GraphiqalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphiqalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22918BE2263C985D00097D2B /* GraphiqalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphiqalUITests.swift; sourceTree = "<group>"; };
+		22918BE4263C985D00097D2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22918BBA263C985A00097D2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22918BF5263C995B00097D2B /* Apollo in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22918BD0263C985D00097D2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22918BDB263C985D00097D2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22918BB4263C985A00097D2B = {
+			isa = PBXGroup;
+			children = (
+				22918BBF263C985A00097D2B /* Graphiqal */,
+				22918BD6263C985D00097D2B /* GraphiqalTests */,
+				22918BE1263C985D00097D2B /* GraphiqalUITests */,
+				22918BBE263C985A00097D2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22918BBE263C985A00097D2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22918BBD263C985A00097D2B /* Graphiqal.app */,
+				22918BD3263C985D00097D2B /* GraphiqalTests.xctest */,
+				22918BDE263C985D00097D2B /* GraphiqalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22918BBF263C985A00097D2B /* Graphiqal */ = {
+			isa = PBXGroup;
+			children = (
+				22162381263CA1210070CBC6 /* schema.json */,
+				22162386263CA1720070CBC6 /* example.graphql */,
+				22918BC0263C985A00097D2B /* GraphiqalApp.swift */,
+				22162395263CA37F0070CBC6 /* API.swift */,
+				2216237C263C9FF70070CBC6 /* APIService.swift */,
+				22918BC2263C985A00097D2B /* ContentView.swift */,
+				22918BC9263C985D00097D2B /* Persistence.swift */,
+				22918BC4263C985D00097D2B /* Assets.xcassets */,
+				22918BCE263C985D00097D2B /* Info.plist */,
+				22918BCB263C985D00097D2B /* Graphiqal.xcdatamodeld */,
+				22918BC6263C985D00097D2B /* Preview Content */,
+			);
+			path = Graphiqal;
+			sourceTree = "<group>";
+		};
+		22918BC6263C985D00097D2B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				22918BC7263C985D00097D2B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		22918BD6263C985D00097D2B /* GraphiqalTests */ = {
+			isa = PBXGroup;
+			children = (
+				22918BD7263C985D00097D2B /* GraphiqalTests.swift */,
+				22918BD9263C985D00097D2B /* Info.plist */,
+			);
+			path = GraphiqalTests;
+			sourceTree = "<group>";
+		};
+		22918BE1263C985D00097D2B /* GraphiqalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22918BE2263C985D00097D2B /* GraphiqalUITests.swift */,
+				22918BE4263C985D00097D2B /* Info.plist */,
+			);
+			path = GraphiqalUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22918BBC263C985A00097D2B /* Graphiqal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22918BE7263C985D00097D2B /* Build configuration list for PBXNativeTarget "Graphiqal" */;
+			buildPhases = (
+				2216238B263CA1DF0070CBC6 /* Generate Apollo GraphQL API */,
+				22918BB9263C985A00097D2B /* Sources */,
+				22918BBA263C985A00097D2B /* Frameworks */,
+				22918BBB263C985A00097D2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Graphiqal;
+			packageProductDependencies = (
+				22918BF4263C995B00097D2B /* Apollo */,
+			);
+			productName = Graphiqal;
+			productReference = 22918BBD263C985A00097D2B /* Graphiqal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22918BD2263C985D00097D2B /* GraphiqalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22918BEA263C985D00097D2B /* Build configuration list for PBXNativeTarget "GraphiqalTests" */;
+			buildPhases = (
+				22918BCF263C985D00097D2B /* Sources */,
+				22918BD0263C985D00097D2B /* Frameworks */,
+				22918BD1263C985D00097D2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22918BD5263C985D00097D2B /* PBXTargetDependency */,
+			);
+			name = GraphiqalTests;
+			productName = GraphiqalTests;
+			productReference = 22918BD3263C985D00097D2B /* GraphiqalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22918BDD263C985D00097D2B /* GraphiqalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22918BED263C985D00097D2B /* Build configuration list for PBXNativeTarget "GraphiqalUITests" */;
+			buildPhases = (
+				22918BDA263C985D00097D2B /* Sources */,
+				22918BDB263C985D00097D2B /* Frameworks */,
+				22918BDC263C985D00097D2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22918BE0263C985D00097D2B /* PBXTargetDependency */,
+			);
+			name = GraphiqalUITests;
+			productName = GraphiqalUITests;
+			productReference = 22918BDE263C985D00097D2B /* GraphiqalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22918BB5263C985A00097D2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					22918BBC263C985A00097D2B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					22918BD2263C985D00097D2B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 22918BBC263C985A00097D2B;
+					};
+					22918BDD263C985D00097D2B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 22918BBC263C985A00097D2B;
+					};
+				};
+			};
+			buildConfigurationList = 22918BB8263C985A00097D2B /* Build configuration list for PBXProject "Graphiqal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22918BB4263C985A00097D2B;
+			packageReferences = (
+				22918BF3263C995B00097D2B /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
+			productRefGroup = 22918BBE263C985A00097D2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22918BBC263C985A00097D2B /* Graphiqal */,
+				22918BD2263C985D00097D2B /* GraphiqalTests */,
+				22918BDD263C985D00097D2B /* GraphiqalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22918BBB263C985A00097D2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22162387263CA1720070CBC6 /* example.graphql in Resources */,
+				22162382263CA1210070CBC6 /* schema.json in Resources */,
+				22918BC8263C985D00097D2B /* Preview Assets.xcassets in Resources */,
+				22918BC5263C985D00097D2B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22918BD1263C985D00097D2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22918BDC263C985D00097D2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2216238B263CA1DF0070CBC6 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22918BB9263C985A00097D2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22918BCA263C985D00097D2B /* Persistence.swift in Sources */,
+				2216237D263C9FF70070CBC6 /* APIService.swift in Sources */,
+				22918BC3263C985A00097D2B /* ContentView.swift in Sources */,
+				22918BC1263C985A00097D2B /* GraphiqalApp.swift in Sources */,
+				22162396263CA37F0070CBC6 /* API.swift in Sources */,
+				22918BCD263C985D00097D2B /* Graphiqal.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22918BCF263C985D00097D2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22918BD8263C985D00097D2B /* GraphiqalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22918BDA263C985D00097D2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22918BE3263C985D00097D2B /* GraphiqalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22918BD5263C985D00097D2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22918BBC263C985A00097D2B /* Graphiqal */;
+			targetProxy = 22918BD4263C985D00097D2B /* PBXContainerItemProxy */;
+		};
+		22918BE0263C985D00097D2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22918BBC263C985A00097D2B /* Graphiqal */;
+			targetProxy = 22918BDF263C985D00097D2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		22918BE5263C985D00097D2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22918BE6263C985D00097D2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22918BE8263C985D00097D2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Graphiqal/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Graphiqal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.artemadams.dev.Graphiqal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22918BE9263C985D00097D2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Graphiqal/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Graphiqal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.artemadams.dev.Graphiqal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22918BEB263C985D00097D2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34387AVW8A;
+				INFOPLIST_FILE = GraphiqalTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.artemadams.dev.GraphiqalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graphiqal.app/Graphiqal";
+			};
+			name = Debug;
+		};
+		22918BEC263C985D00097D2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34387AVW8A;
+				INFOPLIST_FILE = GraphiqalTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.artemadams.dev.GraphiqalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graphiqal.app/Graphiqal";
+			};
+			name = Release;
+		};
+		22918BEE263C985D00097D2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34387AVW8A;
+				INFOPLIST_FILE = GraphiqalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.artemadams.dev.GraphiqalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Graphiqal;
+			};
+			name = Debug;
+		};
+		22918BEF263C985D00097D2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34387AVW8A;
+				INFOPLIST_FILE = GraphiqalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.artemadams.dev.GraphiqalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Graphiqal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22918BB8263C985A00097D2B /* Build configuration list for PBXProject "Graphiqal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22918BE5263C985D00097D2B /* Debug */,
+				22918BE6263C985D00097D2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22918BE7263C985D00097D2B /* Build configuration list for PBXNativeTarget "Graphiqal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22918BE8263C985D00097D2B /* Debug */,
+				22918BE9263C985D00097D2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22918BEA263C985D00097D2B /* Build configuration list for PBXNativeTarget "GraphiqalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22918BEB263C985D00097D2B /* Debug */,
+				22918BEC263C985D00097D2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22918BED263C985D00097D2B /* Build configuration list for PBXNativeTarget "GraphiqalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22918BEE263C985D00097D2B /* Debug */,
+				22918BEF263C985D00097D2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		22918BF3263C995B00097D2B /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.43.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22918BF4263C995B00097D2B /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22918BF3263C995B00097D2B /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		22918BCB263C985D00097D2B /* Graphiqal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				22918BCC263C985D00097D2B /* Graphiqal.xcdatamodel */,
+			);
+			currentVersion = 22918BCC263C985D00097D2B /* Graphiqal.xcdatamodel */;
+			path = Graphiqal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 22918BB5263C985A00097D2B /* Project object */;
+}
